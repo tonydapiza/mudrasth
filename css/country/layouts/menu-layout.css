@@ -1,0 +1,57 @@
+#menu {
+  width: 100% ;
+  height: 70px;
+  box-sizing: border-box;
+  display: flex;
+  position: fixed ;
+  align-items: center ;
+  justify-content: center ;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.72);
+  top: 0em;
+}
+#menu #center {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+}
+#icon-menu {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+#menu #center #logo {
+  display: flex ;
+}
+
+#menu #center #logo p {
+  font-size: 30px ; 
+  color: #fff;
+}
+
+#menu #center ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu #center ul li {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+#menu #center ul li a {
+  color: #fff;
+}
+#menu #center ul li:hover a{
+  color: #2379ea;  transition: all ease 3s;
+}

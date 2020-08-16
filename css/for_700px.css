@@ -1,0 +1,125 @@
+@media screen and (max-width: 700px) {
+  .big-title {
+    font-size: 22px;
+  }
+
+  .menu {
+    width: 100%;
+    height: 70px;
+    padding: 0 10%;
+    position: fixed;
+    align-items: center;
+    z-index: 2000;
+    justify-content: center;
+  }
+  .menuForMobile {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.72);
+    width: 100%;
+    height: 100% !important;
+    padding: 0 10%;
+    padding-top: 15px !important;
+    position: absolute;
+    align-items: center;
+    z-index: 2000;
+    justify-content: start !important;
+  }
+
+  .ul-mobile {
+    display: flex !important;
+    align-self: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .li-mobile {
+    margin-bottom: 50px !important;
+  }
+
+  #icon-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    transition: all ease 1s;
+    transform: rotate(360deg);
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+
+
+  #contact-us .blur {
+    width: 100%;
+    height: 100%;
+  }
+
+  #caracteristicas-h1 {
+    color: #707070;
+    margin: 0 10%;
+    margin-bottom: 50px;
+  }
+
+  #about-us .first img {
+    width: 100%;
+    height: 300px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #about-us .second {
+    justify-content: space-around;
+    padding: 0 5%;
+    height: 350px;
+    align-items: center;
+  }
+
+  #about-us .second .card {
+    width: 100px;
+    height: 200px;
+    align-items: center;
+  }
+
+  #about-us .second .card .simple-text {
+    font-size: 16px;
+    color: #787878;
+    width: 200px;
+    text-align: justify;
+    display: none;
+  }
+
+  #about-us .third,
+  #about-us .forth {
+    height: 400px;
+  }
+
+  #destination .slide .element-slide .onHover .nameOfCountry {
+    font-size: 20px;
+    color: #fff;
+    align-self: flex-end;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+  }
+
+  #footer .menu-div {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    float: left;
+  }
+
+  #footer .menu-div li {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}

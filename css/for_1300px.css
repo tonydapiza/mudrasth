@@ -1,0 +1,37 @@
+@media (max-width: 1300px) {
+  #depoimento {
+    width: 100%;
+    height: max-content !important;
+    padding: 100px 0;
+    box-sizing: border-box;
+    
+  }
+  #destination .slide {
+    width: 100%;
+    height: max-content;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  #destination .slide .element-slide {
+    width:360px;
+    height: 280px;
+    margin: 20px;
+  }
+  
+  #destination .slide .element-slide .onHover {
+    width:360px;
+    height: 280px;
+    display: flex;
+    position: relative;
+    z-index: 20;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(35, 125, 205, 0.77));
+    opacity: 0;
+    transition:ease opacity 0.8s;
+    border-radius: 10px;
+  }
+}

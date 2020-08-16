@@ -1,0 +1,149 @@
+#turistic-area {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0 0 0;
+}
+
+#turistic-area #menu-turist {
+  width: 80%;
+  margin: 50px auto 0 auto;
+  height: 60px;
+  padding: 10px 0;
+}
+
+#turistic-area #menu-turist ul {
+  list-style: none;
+  overflow: hidden;
+}
+#turistic-area #menu-turist ul li {
+  float: left;
+  margin: 20px;
+}
+
+#turistic-area #menu-turist ul li i {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 30px;
+  cursor: pointer;
+  color: #1f1f1f;
+  transition: color ease 2ms;
+}
+#turistic-area #menu-turist ul li:hover i {
+  color: #2255c2;
+}
+@media (max-width: 800px) {
+  #turistic-area #menu-turist ul li i {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 610px) {
+  #turistic-area #menu-turist ul li {
+    margin: 20px 10px;
+  }
+}
+@media (max-width: 510px) {
+  #turistic-area #menu-turist ul li {
+    margin: 20px 5px;
+  }
+}
+@media (max-width: 460px ) {
+  #turistic-area #menu-turist {
+    width: 360px;
+    margin: 50px 0 0 5px;
+    box-sizing: border-box;
+  }
+  #turistic-area #menu-turist ul li {
+    margin: 20px 0 0 5px;
+  }
+  #turistic-area #menu-turist ul li i {
+
+    font-size: 1.2rem;
+  }
+}
+#turistic-area #slide-montreal {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+#turistic-area #slide-montreal .controls-bar {
+  width: 95%;
+  display: flex;
+  height: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#turistic-area #slide-montreal .controls-bar .controls {
+  width: 60px;
+  height: 60px;
+  background-color: #f1f1f1;
+  border-radius: 100%;
+  box-shadow:1px 1px 14px rgba(0, 0, 0, .09);
+  position: relative;
+  top: 200px;
+  cursor: pointer;
+}
+#turistic-area #slide-montreal .controls-bar .controls#left {
+  margin: 0 0 0 10px;
+}
+#turistic-area #slide-montreal .controls-bar .controls#right {
+  margin: 0 10px 0 0;
+}
+#turistic-area #slide-montreal #slide {
+  width: 95%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0 200px 0;
+}
+
+#turistic-area #slide-montreal #slide > div {
+  width: 445px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px 0 0;
+}
+#turistic-area #slide-montreal #slide > div img {
+  height: inherit;
+  border-radius: 10px;
+  box-shadow:1px 1px 14px rgba(0, 0, 0, .09);
+  margin: 0 0 10px 0;
+}
+#turistic-area #slide-montreal #slide > div i {
+  color: #1f1f1f;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (max-width: 1400px) {
+  #turistic-area #slide-montreal #slide > div {
+    width: 405px;
+    height: 400px;
+  }
+}
+@media (max-width: 430px) {
+  #turistic-area #slide-montreal #slide > div {
+    width: 365px;
+    height: 360px;
+    margin: 50px 20px 0 0;
+  }
+}
+
+@media (max-width: 385px) {
+  #turistic-area #slide-montreal #slide > div {
+    width: 345px;
+    height: 330px;
+    margin: 50px 20px 0 0;
+  }
+}

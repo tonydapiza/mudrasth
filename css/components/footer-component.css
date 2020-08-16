@@ -1,0 +1,145 @@
+#footer-component {
+  width: 100%;
+  height: 300px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#footer-component > div {
+  width: 70%;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+#footer-component #top {
+  display: grid !important;
+  grid-template-columns: 3fr 4fr 3fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-component #top #logo {
+  width: 80px;
+  height: 60px;
+  background-image: url(../../img/logo.jpg);
+  background-size: cover;
+}
+
+#footer-component #top #mini-menu > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+#footer-component #top #mini-menu > div i {
+  display: inline-block;
+  margin: 0 10px;
+  font-style: normal;
+}
+#footer-component #top #mini-menu > div i a {
+  color: #383838;
+  font-weight: 600;
+}
+
+#footer-component #top #social-medias {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+}
+
+
+#footer-component #bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  border-top: 1px solid #dadada;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#footer-component #bottom #contact i{
+  font-style: normal;
+  font-weight: 600;
+  color: #383838;
+}
+#footer-component #bottom #copyright {
+  display: flex;
+  flex-direction: column;
+}
+#footer-component #bottom #copyright i {
+  font-style: normal;
+  font-weight: 600;
+  color: #383838;
+}
+
+#footer-component #top #social-medias i {
+  width: 25px ;
+  height: 25px;
+  margin-right: 10px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  float: right;
+}
+.facebook {
+  background-image: url('../../img/facebook.png');
+  background-size: 100%;
+
+
+}
+.instagram {
+  background-image: url('../../img/instagram.png');
+  background-size: 100%;
+}
+.twitter {
+  background-image: url('../../img/twitter.png');
+  background-size: 100%;
+}
+.youtube {
+  background-image: url('../../img/youtube.png');
+  background-size: 100%;
+}
+
+
+@media (max-width: 1120px) {
+  #footer-component #bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+  }
+  #footer-component #bottom #copyright {
+ 
+  }
+}
+@media (max-width: 1421px) {
+  #footer-component #top {
+    display: grid !important;
+    grid-template-columns: 1fr 4fr 1fr;
+  } 
+}
+@media (max-width: 940px) {
+  #footer-component #top #mini-menu {
+    margin: 20px 0 ;
+  }
+  #footer-component #top {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 0 10px 0;
+  }
+  #footer-component #top #social-medias {
+   justify-content: center;
+  }
+  #footer-component #top #social-medias i{
+    margin: 10px;
+  }
+}

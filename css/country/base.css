@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Display';
+}
+html, body {
+  margin: 0;
+  width: 100%;
+}
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+#all {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+#container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: 75px 0 0 0;
+}

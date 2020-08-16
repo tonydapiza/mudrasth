@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Locais, Universidades, Pontos Turísticos e sítios para comer no país">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/country/base.css">
+  <link rel="stylesheet" href="./css/country/layouts/menu-layout.css">
+  <link rel="stylesheet" href="./css/country/layouts/container-layout/header-layout.css">
+  <link rel="stylesheet" href="./css/country/layouts/container-layout/turistic-area-layout.css">
+  <link rel="stylesheet" href="./css/country/layouts/container-layout/university-area-layout.css">
+  <link rel="stylesheet" href="./css/components/footer-component.css">
+  <script>
+    window.onload = async function () {
+      let viewportHeight = await this.visualViewport.height;
+      document.querySelector('#header').style.height = viewportHeight+'px'
+    }
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="all">
+
+
+    <div id="menu">
+      <img src="../img/menu.png" alt="" id="icon-menu" />
+      <div id="center">
+        <div id="logo">
+          <a href="#contact-us">
+            <p>[Logo da Empresa]</p>
+          </a>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#turistic-area">Sobre Nós</a></li>
+            <li><a href="#destination">Destinos</a></li>
+            <li><a href="#depoimento">Depoimentos</a></li>
+            <li><a href="#blur-conteiner">Diversos</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    <div id="container">
+      <div id="header">
+        <div id="submenu">
+          <div>
+            <div id="country-name">
+              <i>Russia</i>
+            </div>
+            <div id="items">
+              <ul>
+                <li><a href="#turistic-area">Locais Turísticos</a></li>
+                <li><a href="#university-area">Universidades</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="basic-info">
+          <div class="back">
+            <div>
+              <h1>Russia, o País de Michael Gorbachov</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente cupiditate dolorum architecto libero consectetur
+                voluptas placeat, repudiandae aliquid? Est et earum expedita
+                fugit, saepe mollitia possimus sint nostrum sunt odit!</p>
+              <div id="miscellaneous-infos">
+                <ul>
+                  <li>
+                    <i></i>
+                    <i>1.247.700Km</i>
+                  </li>
+                  <li>
+                    <i></i>
+                    <i>Cristiano, Islã</i>
+                  </li>
+                  <li>
+                    <i></i>
+                    <i>Putólar</i>
+                  </li>
+                </ul>
+              </div>
+              <div id="detailed-infos">
+                <i>
+                  Mais informações no <a href="https://www.en.wikipedia.com/Russia" target="new">Wikipedia</a>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="turistic-area">
+        <div id="menu-turist">
+          <ul>
+            <li><i>Patrimónios</i></li>
+            <li><i>Praças</i></li>
+            <li><i>Paisagens</i></li>
+            <li><i>Muséus</i></li>
+          </ul>
+        </div>
+        <div id="slide-montreal">
+
+          <div class="controls-bar">
+            <div class="controls" id="left"></div>
+            <div class="controls" id="right"></div>
+          </div>
+          <div id="slide">
+            <div>
+              <img src="./img/03.jpg" alt="Imagem de país">
+              <i class="title">Palácio do Kremlim</i>
+            </div>
+            <div>
+              <img src="./img/03.jpg" alt="Imagem de país">
+              <i class="title">Palácio do Kremlim</i>
+            </div>
+            <div>
+              <img src="./img/03.jpg" alt="Imagem de país">
+              <i class="title">Palácio do Kremlim</i>
+            </div>
+            <div>
+              <img src="./img/03.jpg" alt="Imagem de país">
+              <i class="title">Palácio do Kremlim</i>
+            </div>
+            <div>
+              <img src="./img/03.jpg" alt="Imagem de país">
+              <i class="title">Palácio do Kremlim</i>
+            </div>
+            <div>
+              <img src="./img/03.jpg" alt="Imagem de país">
+              <i class="title">Palácio do Kremlim</i>
+            </div>
+            <div>
+              <img src="./img/03.jpg" alt="Imagem de país">
+              <i class="title">Palácio do Kremlim</i>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div id="university-area">
+        <div id="top">
+          <div id="title">
+            <h1>Universidades</h1>
+          </div>
+          <div id="search">
+            <div id="filter">
+              <i>Pesquisar por:</i>
+              <select name="select" id="categoria">
+                <option value="Cursos">Cursos</option>
+                <option value="Cidade">Cidades</option>
+                <option value="Nome">Nome</option>
+              </select>
+            </div>
+            <input type="text" name="q" id="search-input" placeholder="Pesquise aqui">
+          </div>
+
+        </div>
+        <div id="university-grid-list">
+          <div class="university-grid-item">
+            <img src="./img/user4.jpg" alt="Emblema da universidade">
+            <div>
+              <i>Universidae de Leningrado</i>
+              <i>Pública</i>
+            </div>
+          </div>
+          <div class="university-grid-item">
+            <img src="./img/user4.jpg" alt="Emblema da universidade">
+            <div>
+              <i>Universidade Karl Max</i>
+              <i>Pública</i>
+            </div>
+          </div>
+          <div class="university-grid-item">
+            <img src="./img/user4.jpg" alt="Emblema da universidade">
+            <div>
+              <i>Universidade de Moscow</i>
+              <i>Pública</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer-component">
+        <div id="top">
+          <div id="logo"></div>
+          <div id="mini-menu">
+            <div>
+              <i><a href="#">Sobre Nós</a></i>
+              <i><a href="#">Destinos</a></i>
+              <i><a href="#">Depoimentos</a></i>
+              <i><a href="#">Diversos</a></i>
+            </div>
+          </div>
+          <div id="social-medias">
+            <i class="facebook"></i>
+            <i class="twitter"></i>
+            <i class="youtube"></i>
+            <i class="instagram"></i>
+          </div>
+        </div>
+        <div id="bottom">
+          <div id="copyright">
+            <i>Copyright (c)  2020 Mudrasth, prestação de serviços. ltd.</i> 
+            <i>Todos os direitos reservados | Luanda, Viana, Luanda-sul casa nº 10</i>
+        </div>
+          <div id="contact">
+            <i>924536425 | example@domain.ao.co</i>
+          </div>
+         
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

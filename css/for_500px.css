@@ -1,0 +1,247 @@
+@media screen and (max-width: 500px) {
+  .big-title {
+    font-size: 22px;
+  }
+
+  .menu {
+    width: 100%;
+    height: 70px;
+    padding: 0 10%;
+    position: absolute;
+    align-items: center;
+    z-index: 2000;
+    justify-content: center;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  #contact-us .blur {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact-us .blur-cont {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+  }
+  #contact-us .blur-cont #contact {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    margin: 0 10px;
+    border-radius: 12px;
+    padding: 20px 20px;
+  }
+  #contact-us .blur-cont #contact p {
+    font-size: 14px;
+    color: #787878;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #contact-us .blur-cont #contact input {
+    width: 100%;
+    height: 50px;
+    border: solid 2px #70707021;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 4px 0;
+    font-size: 16px;
+    color: #787878;
+  }
+
+  .about-us-title {
+    margin-top: -80px !important;
+  }
+  #caracteristicas-h1 {
+    color: #707070;
+    margin: 30px 10%;
+  }
+
+  #about-us .first {
+    height: auto;
+  }
+  #about-us .first .background {
+    width: 300px;
+    background-size: 300px;
+   }
+  #about-us .first img {
+    width: 100%;
+    height: 300px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #about-us .second {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 5%;
+    height: 350px;
+    align-items: center;
+  }
+
+  #about-us .second .card {
+    width: 100px;
+    height: 200px;
+    align-items: center;
+  }
+  #about-us .second .card img {
+    width: 20px;
+    height: 50px;
+    align-self: center;
+  }
+  #about-us .second .card .large-icons {
+    width: 50px;
+    height: 50px;
+  }
+
+  #about-us .second .card .text-blue {
+    font-size: 16px;
+    color: #2379ea;
+    margin: 20px 0;
+    width: 200px;
+    text-align: center;
+  }
+
+  #about-us .second .card .simple-text {
+    font-size: 16px;
+    color: #787878;
+    width: 200px;
+    text-align: justify;
+    display: none;
+  }
+
+  #about-us .third .texts-and-button,
+  #about-us .forth .texts-and-button {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    align-self: center;
+  }
+
+  #about-us .third .image,
+  #about-us .forth .image {
+    display: none;
+    width: 32%;
+    height: 100%;
+    background: #2379ea;
+  }
+
+  /*#destination {
+    width: 100%;
+    height: max-content;
+    padding-top: 20px;
+  }
+  .destination-title {
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+  #destination .slide {
+    width: 100%;
+    height: 300px;
+
+    left: 0;
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 0 10%;
+  }
+  #destination .slide .element-slide {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  #destination .slide .element-slide .onHover {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    z-index: 20;
+    background: linear-gradient(
+      rgba(100, 100, 100, 0.637),
+      rgba(0, 0, 0, 0.767)
+    );
+    margin-top: -202px;
+    opacity: 0;
+    transition: 0.8s;
+  }*/
+
+ /* #depoimento {
+    width: 100%;
+    height: 500px;
+  }
+
+  #depoimento .depoimento-title {
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+
+  #depoimento .depoiments-cont {
+    width: 94%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    align-self: center;
+  }
+  #depoimento .depoiments-cont .depoiments-card {
+    width: 250px !important;
+    height: 250px !important;
+    border-radius: 8px;
+    align-items: center;
+    padding: 30px 20px;
+    transition: 0.5s;
+    margin: 20px 5px;
+  }
+  #depoimento .depoiments-cont .depoiments-card:hover img {
+    transform: rotate(360deg) scale(1.02);
+    width: 60px;
+    height: 60px;
+    transform-style: preserve-3d;
+    transition: all ease 0.3s;
+  }
+  #depoimento .depoiments-cont .depoiments-card img {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    transition: 1s;
+  }
+  #depoimento .depoiments-cont .depoiments-card p {
+    font-size: 16px;
+    color: #787878;
+    text-align: center;
+  }
+  #depoimento button {
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px auto;
+  }*/
+
+  #blur-conteiner .blur-cont h1 {
+    color: #fff;
+    font-size: 30px;
+    width: 90%;
+  }
+
+  #blur-conteiner .blur-cont p {
+    color: rgb(180, 179, 179);
+    font-size: 20px;
+    width: 90%;
+  }
+  #blur-conteiner .blur-cont div {
+    width: 90%;
+  }
+}

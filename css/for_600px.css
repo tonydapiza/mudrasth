@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  #destination .slide .element-slide {
+    width: 350px !important;
+    height: 250px !important; 
+    margin: 20px;
+  }
+  
+  #destination .slide .element-slide .onHover {
+    width:350px !important;
+    height: 250px !important;
+    display: flex;
+    position: relative;
+    z-index: 20;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(35, 125, 205, 0.77));
+    opacity: 1;
+    transition:ease opacity 0.8s;
+    border-radius: 10px;
+  }
+}

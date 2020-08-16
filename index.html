@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/for_1600px.css">
+  <link rel="stylesheet" href="./css/for_1400px.css" />
+  <link rel="stylesheet" href="./css/for_1200px.css">
+  <link rel="stylesheet" href="./css/for_1300px.css" />
+  <link rel="stylesheet" href="./css/for_1000px.css" />
+  <link rel="stylesheet" href="./css/for_800px.css">
+  <link rel="stylesheet" href="./css/for_700px.css" />
+  <link rel="stylesheet" href="./css/for_600px.css">
+  <link rel="stylesheet" href="./css/for_500px.css" />
+  <link rel="stylesheet" href="./css/components/footer-component.css">
+  <script type="text/javascript" src="./script/jquery.js"></script>
+  <title>Mudrasth</title>
+  <script>
+    window.onload = function () {
+      let len = document.querySelectorAll('.element-slide').length;
+      for (let i = 0; i < len; i++) {
+        document.querySelectorAll('.element-slide')[i].onmouseover = function () {
+          let id = document.querySelectorAll('.element-slide')[i].classList.toString().split(/\w+ /);
+          console.log('.'+id[1]);
+          let element = `.${id[1]}`;
+          $(element).animate({top: -10}, 100);
+        }
+        document.querySelectorAll('.element-slide')[i].onmouseout = function () {
+          let id = document.querySelectorAll('.element-slide')[i].classList.toString().split(/\w+ /);
+          console.log('.'+id[1]);
+          let element = `.${id[1]}`;
+          $(element).animate({top: 0}, 100);
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="menu row">
+    <img src="../img/menu.png" alt="" id="icon-menu" />
+    <div id="center">
+      <div id="logo">
+        <a href="#contact-us">
+          <p>[Logo da Empresa]</p>
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#about-us">Sobre Nós</a></li>
+          <li><a href="#destination">Destinos</a></li>
+          <li><a href="#depoimento">Depoimentos</a></li>
+          <li><a href="#blur-conteiner">Diversos</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="conteiner-video">
+    <p class="go-back">Voltar</p>
+    <video class="video" autoplay muted>
+      <source src="../videos/video_1.mp4" type="video/mp4" />
+      <source />
+    </video>
+  </div>
+
+  <div class="conteiner">
+    <div id="contact-us">
+      <div class="blur">
+        <div class="blur-cont row">
+          <div>
+            <h1>
+              Eu posso, tu podes, nós podemos!<br />Acredite e vá a luta! We can
+              everything, God is God of the impossible
+            </h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis officia maiores, aperiam odio dignissimos ex dicta quas
+              blanditiis, tempora vero labore? Dolorem placeat voluptatum
+              aperiam quam repellat ullam nobis porro!
+            </p>
+
+            <button class="button_play" onclick="showVideo()"></button>
+          </div>
+          <div id="contact" class="column">
+            <p>Envia-nos um email falando sobre si</p>
+
+            <input placeholder="Nome" />
+            <input placeholder="Email" />
+
+            <textarea placeholder="Escreva aqui a sua mensagem"></textarea>
+            <button class="send_form btn">
+              Enviar Formulário
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about-us">
+      <h1 class="title about-us-title">Sobre Nós</h1>
+      <div class="row first">
+        <div class="background"></div>
+
+        <div class="texts">
+          <h1 class="big-title">
+            Mudrasth<br />
+            Nunca o teu Sonho <br />
+            esteve tão próximo de si
+          </h1>
+          <p>
+            A Mudrasth é uma empresa de prestação de serviços, que tem como
+            finalidade, ajudar cidadãos africanos, sul americanos e não só, à
+            ingressarem a Universidades de vários países como: Russia, Ucrânia
+            e outros
+          </p>
+        </div>
+      </div>
+      <h1 id="caracteristicas-h1" class="big-title">
+        Caracteristicas dos nossos serviços <br />
+        pensando sempre em ti
+      </h1>
+      <div class="second row">
+        <div class="card column">
+          <img src="./img/icon_fast.png" alt="" />
+          <p class="text-blue">Rápido</p>
+          <p class="simple-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+            quibusdam dolor veritatis temporibus? Asperiores atque ea officia
+          </p>
+        </div>
+
+        <div class="card column">
+          <img src="./img/icon_react.png" alt="" class="large-icons" />
+          <p class="text-blue">Inovador</p>
+          <p class="simple-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+            quibusdam dolor veritatis temporibus? Asperiores atque ea officia
+          </p>
+        </div>
+
+        <div class="card column">
+          <img src="./img/icon_responsive.png" alt="" class="large-icons" />
+          <p class="text-blue">Responsivo</p>
+          <p class="simple-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+            quibusdam dolor veritatis temporibus? Asperiores atque ea officia
+          </p>
+        </div>
+      </div>
+
+      <div class="third row">
+        <div class="texts-and-button">
+          <h2 class="title">
+            Nunca foi tão fácil e dinâmico estudar na Universidade estrangeira
+            dos seus sonhos
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis sed aliquam excepturi voluptas saepe facere sapiente
+            molestias deserunt, quia fugiat nulla laborum assumenda ipsam ea,
+            vitae sint eius quo suscipit?molestias deserunt, quia fugiat nulla
+            laborum assumenda ipsam ea, vitae sint eius quo suscipit?
+          </p>
+          <button class="btn">Dar uma olhada</button>
+        </div>
+        <div class="image">
+          <div></div>
+        </div>
+      </div>
+      <div class="forth row">
+        <div class="image">
+          <div></div>
+        </div>
+        <div class="texts-and-button">
+          <h2 class="title">
+            Nunca foi tão fácil e dinâmico estudar na Universidade estrangeira
+            dos seus sonhos
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis sed aliquam excepturi voluptas saepe facere sapiente
+            molestias deserunt, quia fugiat nulla laborum assumenda ipsam ea,
+            vitae sint eius quo suscipit?molestias deserunt, quia fugiat nulla
+            laborum assumenda ipsam ea, vitae sint eius quo suscipit?
+          </p>
+          <button class="btn">Dar uma olhada</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="destination" class="">
+      <h1 class="title destination-title">Destinos</h1>
+      <div class="slide row">
+        <div class="element-slide s1">
+          <div class="onHover">
+            <p class="nameOfCountry">Russia</p>
+          </div>
+        </div>
+        <div class="element-slide s2">
+          <div class="onHover">
+            <p class="nameOfCountry">Estados Unidos</p>
+          </div>
+        </div>
+        <div class="element-slide s3">
+          <div class="onHover">
+            <p class="nameOfCountry">Ucrânia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="depoimento" class="column">
+      <div class="depoiments-cont">
+        <div class="depoiments-card column">
+          <img src="./img/user3.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo sed quo incidunt culpa saepe, vero ut
+          </p>
+        </div>
+        <div class="depoiments-card column">
+          <img src="./img/user4.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo sed quo incidunt culpa saepe, vero ut
+          </p>
+        </div>
+        <div class="depoiments-card column">
+          <img src="./img/user5.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo sed quo incidunt culpa saepe, vero ut
+          </p>
+        </div>
+        <div class="depoiments-card column">
+          <img src="./img/user6.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo sed quo incidunt culpa saepe, vero ut
+          </p>
+        </div>
+      </div>
+      <button class="btn">Deixar Opinião</button>
+    </div>
+    <div>
+      <div>
+
+      </div>
+    </div>
+    <div id="blur-conteiner">
+      <div class="blur">
+        <div class="blur-cont column">
+          <h1>
+            Mudrasth<br />
+            Texto exemplar, pode conter qualquer tipo de text
+          </h1>
+          <p>
+            Texto expemplar, pode conter qualquer coisa
+          </p>
+          <div>
+            <button>Venha Visitar o teu sonho</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="map-conteiner"></div>
+    <footer id="footer-component">
+      <div id="top">
+        <div id="logo"></div>
+        <div id="mini-menu">
+          <div>
+            <i><a href="#">Sobre Nós</a></i>
+            <i><a href="#">Destinos</a></i>
+            <i><a href="#">Depoimentos</a></i>
+            <i><a href="#">Diversos</a></i>
+          </div>
+        </div>
+        <div id="social-medias">
+          <i class="facebook"></i>
+          <i class="twitter"></i>
+          <i class="youtube"></i>
+          <i class="instagram"></i>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="copyright">
+          <i>Copyright (c)  2020 Mudrasth, prestação de serviços. ltd.</i> 
+          <i>Todos os direitos reservados | Luanda, Viana, Luanda-sul casa nº 10</i>
+      </div>
+        <div id="contact">
+          <i>924536425 | example@domain.ao.co</i>
+        </div>
+       
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="../script/js.js"></script>
+  <script></script>
+</body>
+
+</html>

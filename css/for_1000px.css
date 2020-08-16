@@ -1,0 +1,137 @@
+@media screen and (max-width: 1000px) {
+  .menu {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    align-items: center;
+    z-index: 2000;
+    justify-content: center;
+  }
+
+  .menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  #contact-us .blur {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contact-us .blur-cont {
+    width: 100%;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: center;
+  }
+
+  #contact-us .blur-cont div:first-child {
+    display: none;
+  }
+
+  #about-us .first {
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+    margin: 50px 0;
+  }
+
+  #about-us .first .background {
+    width: 500px;
+    background-size: 500px;
+   }
+
+  #about-us .third,
+  #about-us .forth {
+    height: 500px;
+  }
+
+  #about-us .third .texts-and-button,
+  #about-us .forth .texts-and-button {
+    width: 60%;
+    height: 100%;
+    padding: 0 50px;
+    align-self: center;
+  }
+
+  #about-us .third .texts-and-button h2,
+  #about-us .forth .texts-and-button h2 {
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+
+  #about-us .third .texts-and-button p,
+  #about-us .forth .texts-and-button p {
+    font-size: 14px;
+    color: #787878;
+    margin-bottom: 40px;
+    height: 35%;
+  }
+
+
+
+  #destination .slide .element-slide .onHover .nameOfCountry {
+    font-size: 20px;
+    color: #fff;
+    align-self: flex-end;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+  }
+
+  #depoimento .depoiments-cont .depoiments-card {
+    width: 240px;
+    height: 340px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 30px 20px;
+    transition: 0.5s;
+    margin: 20px 5px;
+  }
+  #destination .slide {
+    width: 100%;
+    height: max-content;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    justify-items: center;
+  }
+  #destination .slide .element-slide {
+    width:460px !important;
+    height: 400px !important;
+    margin: 20px 0;
+  }
+  
+  
+  #destination .slide .element-slide .onHover {
+    width:460px !important;
+    height: 400px !important;
+    display: flex;
+    position: relative;
+    z-index: 20;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(35, 125, 205, 0.77));
+    opacity: 1;
+    transition:ease opacity 0.8s;
+    border-radius: 10px;
+  }
+
+  #footer {
+   flex-direction: column;
+   align-items: center;
+  }
+  #footer > div {
+    margin-bottom: 30px;
+    width: 600px !important;
+    border: 1px solid #ffff;
+  }
+}
